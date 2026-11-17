@@ -22,7 +22,7 @@ jobs:
       - name: Validate and write public dataset
         env:
           GANTT_DISPATCH_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
-        run: python3 validate_and_publish.py
+        run: python3 validate_and_publish_rev06.py
 
       - name: Commit new planning
         run: |
